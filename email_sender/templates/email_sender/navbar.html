@@ -1,0 +1,40 @@
+{% extends "email_sender/basic_navbar.html" %}
+
+{% block offcanvas_button %}
+  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#paneloffcanvas" aria-controls="paneloffcanvas">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+{% endblock %}
+
+{% block offcanvas %}
+    <div class="offcanvas offcanvas-start text-bg-dark " data-bs-scroll="false" data-bs-backdrop="true" tabindex="-1" id="paneloffcanvas" aria-labelledby="offcanvasDarkNavbarLabel2">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel2">Panel</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body ">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+{% endblock %}
