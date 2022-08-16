@@ -1,0 +1,13 @@
+<nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid justify-content-start">
+    {% block offcanvas_button %}
+    {% endblock %}
+    <a class="navbar-brand ms-2" href="#">
+      {% load static %}
+      <img height="50" width="50" src="{% static 'email_sender/icons8-mail.svg' %}" alt="My image">
+      DES
+    </a>
+  </div>
+  {% block offcanvas %}
+  {% endblock %}
+</nav>
